@@ -85,7 +85,6 @@ export function Footer() {
   const handleNewsletterSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setIsLoading(true)
-    trackCTAClick('newsletter_signup_footer', 'footer')
     
     // Simulate API call
     await new Promise(resolve => setTimeout(resolve, 1000))
@@ -99,7 +98,6 @@ export function Footer() {
   }
 
   const handleSocialClick = (platform: string) => {
-    trackCTAClick(`social_${platform.toLowerCase()}_footer`, 'footer')
   }
 
   return (
@@ -189,7 +187,7 @@ export function Footer() {
               <Link 
                 href="/" 
                 className="flex items-center space-x-3 group w-fit"
-                onClick={() => trackCTAClick('footer_logo_click')}
+                
               >
                 <div className="relative group-hover:scale-105 transition-all duration-300">
                   <Image 

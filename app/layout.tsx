@@ -20,6 +20,11 @@ export const metadata: Metadata = {
   generator: "Next.js",
   applicationName: "Nexpage Technologies",
   referrer: "origin-when-cross-origin",
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon-16x16.png",
+    apple: "/apple-touch-icon.png",
+  },
   keywords: [
     "digital agency", 
     "web development", 

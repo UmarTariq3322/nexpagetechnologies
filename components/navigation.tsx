@@ -107,7 +107,7 @@ export function Navigation() {
   }, [])
 
   const handleCTAClick = (action: string) => {
-    trackCTAClick(action)
+    trackCTAClick()
   }
 
   return (
