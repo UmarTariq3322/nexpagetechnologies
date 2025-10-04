@@ -33,7 +33,7 @@ export async function POST(req: Request) {
     - Digital Transformation (Custom pricing)
     
     Provide a specific recommendation with reasoning, pricing, timeline, and next steps.`,
-    maxTokens: 800,
+    maxOutputTokens: 800,
   })
 
   return Response.json({ recommendation: object })

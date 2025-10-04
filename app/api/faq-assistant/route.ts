@@ -61,7 +61,7 @@ export async function POST(req: Request) {
     Question: ${question}
     
     Provide a helpful, accurate answer. If you don't have specific information, suggest contacting the team for details.`,
-    maxTokens: 300,
+    maxOutputTokens: 300,
   })
 
   return Response.json({
