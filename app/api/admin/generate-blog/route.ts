@@ -34,12 +34,4 @@ Requirements:
 
 Format the output as a complete blog post with markdown formatting.`
 
-  const { text } = await generateText({
-    model: openai("gpt-4o-mini"),
-    prompt,
-    maxTokens: 2000,
-    temperature: 0.7,
-  })
-
-  return Response.json({ content: text })
 }
